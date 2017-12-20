@@ -7,8 +7,7 @@ body {
     margin: 0;
     font-family: 'Karla', sans-serif;
 }
-.my-container,
-footer {
+.my-container {
     padding: 100px 0;
 }
 .row {
@@ -16,7 +15,7 @@ footer {
 }
 h2 {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     color: #327aba;
     font-family: 'Bitter', serif;
 }
@@ -28,10 +27,10 @@ h2 {
 }
 .navbar.navbar-light .nav-link {
     color: #327aba;
-    padding: 0 30px;
+    padding: 10px 10px 10px 50px;
     font-family: 'Bitter', serif;
     transition: all 0.4s ease;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 .navbar.navbar-light .nav-link:hover {
     color: #469ce9;
@@ -52,11 +51,31 @@ h2 {
 .navbar.navbar-light .navbar-brand:hover{
    color: #469ce9;
 }
+.navbar .navbar-toggler{
+    color: #327aba;
+    cursor: pointer;
+    border: 2px solid #327aba;
+    transition: all 0.4s ease;
+}
+.navbar .navbar-toggler:hover{
+    color: #469ce9;
+    border: 2px solid #469ce9;
+}
+.navbar .navbar-toggler:focus{
+    outline: none;
+}
+.navbar .navbar-toggler i {
+    font-size: 1.2em;
+}
 
 /*  Scroll  */
 .nav-bar-scroll {
     background-color: rgba(70, 156, 233, 0.5);
     transition: 0.4s;
+}
+.navbar .navbar-toggler-scroll {
+    color: #fff;
+    border: 2px solid #fff;
 }
 .navbar.navbar-light .nav-link-scroll, 
 .navbar.navbar-light .navbar-brand-scroll {
@@ -71,6 +90,7 @@ h2 {
     width: 10px;
     border-radius: 50%;
     margin: 0 10px;
+    cursor: pointer;
 }
 .carousel-indicators .active {
     transform: scale(1.3);
@@ -109,7 +129,7 @@ h2 {
 /*    Oferta    */
 
 #oferta {
-    background-color: rgba(50, 122, 186, 0.3);
+    background-color: rgba(50, 122, 186, 0.2);
 }
 #oferta .col-md-4 {
     padding: 20px;
@@ -125,19 +145,20 @@ h2 {
     color: #327aba;
     transform: scale(1.1);
 }
-#oferta h3 {
+#oferta h4 {
     color: #469ce9;
 }
 
 /*    Portfolio   */
 
 #portfolio .portfolio-item {
+    cursor: pointer;
     background-position: center;
     background-size: cover;
     height: 70vh;
     transition: 0.4s;
 }
-#portfolio .col-md-4 {
+#portfolio .col-my {
     padding: 10px;
 }
 #portfolio .mask {
@@ -179,9 +200,11 @@ h2 {
 }
 #team .my-team {
     position: relative;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    margin: 15px 0;
+}
+#team .col-md-4 {
+    padding: 8px;
 }
 .my-team .team-member {
     height: 100%;
@@ -226,6 +249,9 @@ h2 {
     background-color: #327aba;
     color: #fff;
 }
+#contact h2 {
+    color: #fff;
+}
 #contact i {
     font-size: 2.5em;
     padding: 15px;
@@ -250,7 +276,7 @@ form {
     margin: 10px;
 }
 .my-button {
-    color: #469ce9;;
+    color: #327aba;
     border: 2px solid #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -264,5 +290,43 @@ form {
 .my-button:hover {
     color: #fff;
     border: 2px solid #469ce9;
-    background-color: rgba(70, 156, 233, 0.3);
+    background-color: #469ce9;
 }
+
+/*    Footer   */
+
+footer .copyright p {
+    color: #327aba;
+    padding: 10px 0;
+    margin: 0;
+}
+footer .container-footer {
+    padding: 20px;
+}
+#footer-col i {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.4s;
+    background-color: #327aba;
+}
+#footer-col i:hover {
+    color: #469ce9;
+}
+footer .policy {
+    padding: 10px;
+}
+footer .policy a {
+    text-decoration: none;
+    color: #327aba;
+    transition: 0.4s;
+    padding: 10px;
+}
+footer .policy a:hover {
+    color: #469ce9;
+}
+
