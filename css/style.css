@@ -200,8 +200,9 @@ h2 {
 }
 #team .my-team {
     position: relative;
-    height: 60vh;
+    height: 55vh;
     width: 100%;
+    
 }
 #team .col-md-4 {
     padding: 8px;
@@ -227,14 +228,19 @@ h2 {
     position: absolute;
     padding: 10px;
     top: 0;
-    padding-top: 20%;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
     text-align: center;
     transform: rotateY(180deg);
     background-color: rgba(50, 122, 186, 0.6);
     transition: 0.4s;
     backface-visibility: hidden;
+}
+.my-team .profile-description .description-inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .my-team:hover .team-member{
     transform: rotateY(180deg);
@@ -262,23 +268,23 @@ h2 {
     color: #469ce9;
 }
 form {
-    padding-top: 80px;
+    padding-top: 70px;
 }
-#contact input {
-    width: 90%;
+#contact input, textarea {
+    width: 100%;
     padding: 5px; 
-    margin: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid #fff;
 }
 #contact textarea {
-    width: 90%;
     height: 155px;
-    padding: 5px;
-    margin: 10px;
 }
 .my-button {
     color: #327aba;
     border: 2px solid #fff;
-    padding: 10px 20px;
+    padding: 8px 22px;
     text-decoration: none;
     transition: 0.4s;
     border-radius: 4px;
@@ -324,7 +330,7 @@ footer .policy a {
     text-decoration: none;
     color: #327aba;
     transition: 0.4s;
-    padding: 10px;
+    padding: 5px;
 }
 footer .policy a:hover {
     color: #469ce9;
