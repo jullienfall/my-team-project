@@ -7,7 +7,8 @@ body {
     margin: 0;
     font-family: 'Karla', sans-serif;
 }
-.my-container {
+.my-container,
+footer {
     padding: 100px 0;
 }
 .row {
@@ -22,12 +23,12 @@ h2 {
 
 /*  Navigation  */
 
-.navbar.navbar-light .navbar-nav {
-    padding-right: 10%;
+.navbar {
+    padding: 0 7%;
 }
 .navbar.navbar-light .nav-link {
     color: #327aba;
-    padding-left: 40px;
+    padding: 0 30px;
     font-family: 'Bitter', serif;
     transition: all 0.4s ease;
     text-transform: lowercase;
@@ -35,12 +36,18 @@ h2 {
 .navbar.navbar-light .nav-link:hover {
     color: #469ce9;
 }
+.navbar.navbar-light .nav-link:focus {
+    color: #327aba;
+}
 .navbar.navbar-light .navbar-brand {
     color: #327aba;
     font-family: 'Pacifico', cursive;
-    padding-left: 8.5%;
-    font-size: 1.5em;
+    font-size: 2em;
     transition: all 0.4s ease;
+}
+.navbar.navbar-light .navbar-brand i {
+    padding-right: 8px;
+    font-size: 1.5em;
 }
 .navbar.navbar-light .navbar-brand:hover{
    color: #469ce9;
@@ -50,7 +57,6 @@ h2 {
 .nav-bar-scroll {
     background-color: rgba(70, 156, 233, 0.5);
     transition: 0.4s;
-    padding: 0;
 }
 .navbar.navbar-light .nav-link-scroll, 
 .navbar.navbar-light .navbar-brand-scroll {
@@ -75,16 +81,16 @@ h2 {
     background-size: cover;
 }
 .slider-container .slide1 {
-    background-image: url(../img/business-2717066_1920.jpg);
+    background-image: url(../img/slider1.jpg);
 }
 .slider-container .slide2 {
-    background-image: url(../img/computer-1209641_1920.jpg);
+    background-image: url(../img/slider2.jpg);
 }
 .slider-container .slide3 {
-    background-image: url(../img/imac-606765_1920.jpg);
+    background-image: url(../img/slider3.jpg);
 }
 .slider-container .slide4 {
-    background-image: url(../img/taras-shypka-424932.jpg);
+    background-image: url(../img/slider4.jpg);
 }
 .slider-container .slider-caption {
     text-align: left;
@@ -93,38 +99,170 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    right: 15%;
-}
-.slider-container .slider-caption a {
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.4s;
-    border-radius: 4px;
-}
-.slider-container .slider-caption a:hover {
-    color: #327aba;
-    border: 2px solid #327aba;
+    right: 20%;
 }
 .carousel-control-prev,
 .carousel-control-next {
     font-size: 3em;
 }
 
-/*   O nas   */
+/*    Oferta    */
 
-#o-nas .o-nas-photo {
-    height: 450px;
-    background-image: url(../img/workplace-1245776_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 15px;
+#oferta {
+    background-color: rgba(50, 122, 186, 0.3);
+}
+#oferta .col-md-4 {
+    padding: 20px;
+}
+#oferta i {
+    font-size: 4em;
+    color: #fff;
+    padding: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#oferta i:hover {
+    color: #327aba;
+    transform: scale(1.1);
+}
+#oferta h3 {
+    color: #469ce9;
 }
 
-/*    Realizacje    */
+/*    Portfolio   */
 
-#realizacje {
-    background-color: rgba(223, 239, 244, 0.4);
-    height: 300px;
+#portfolio .portfolio-item {
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    transition: 0.4s;
+}
+#portfolio .col-md-4 {
+    padding: 10px;
+}
+#portfolio .mask {
+    overflow: hidden;
+}
+#portfolio .portfolio-item1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+#portfolio .portfolio-item2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+#portfolio .portfolio-item3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+#portfolio .portfolio-item4 {
+    background-image: url(../img/portfolio4.jpg);
+}
+#portfolio .portfolio-item5 {
+    background-image: url(../img/portfolio5.jpg);
+}
+#portfolio .portfolio-item6 {
+    background-image: url(../img/portfolio6.jpg);
+}
+#portfolio .portfolio-item:hover {
+    transform: scale(1.2);
+}
+
+/*   Team   */
+
+#team {
+    background-image: linear-gradient(to bottom, rgba(50, 122, 186, 0.4), rgba(255, 255, 255, 0.4)), url(../img/team.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+#team .team-description {
+    padding-bottom: 40px;
+}
+#team .my-team {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    margin: 15px 0;
+}
+.my-team .team-member {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: 0.4s;
+}
+.my-team .team-member1{
+    background-image: url(../img/member1.jpg);
+}
+.my-team .team-member2{
+    background-image: url(../img/member2.jpg);
+}
+.my-team .team-member3{
+    background-image: url(../img/member3.jpg);
+}
+.my-team .profile-description {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    padding-top: 20%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: rgba(50, 122, 186, 0.6);
+    transition: 0.4s;
+    backface-visibility: hidden;
+}
+.my-team:hover .team-member{
+    transform: rotateY(180deg);
+} 
+.my-team:hover .profile-description{
+    transform: rotateY(0deg);
+}
+
+/*    Kontakt    */
+
+#contact {
+    background-color: #327aba;
+    color: #fff;
+}
+#contact i {
+    font-size: 2.5em;
+    padding: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#contact i:hover {
+    color: #469ce9;
+}
+form {
+    padding-top: 80px;
+}
+#contact input {
+    width: 90%;
+    padding: 5px; 
+    margin: 10px;
+}
+#contact textarea {
+    width: 90%;
+    height: 155px;
+    padding: 5px;
+    margin: 10px;
+}
+.my-button {
+    color: #469ce9;;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px;
+}
+.my-button:hover {
+    color: #fff;
+    border: 2px solid #469ce9;
+    background-color: rgba(70, 156, 233, 0.3);
 }
