@@ -3,28 +3,34 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Alegreya', serif;
 }
+
 .my-container {
     padding: 100px 0;
 }
+
 .row {
     margin: 0;
 }
+
 h2 {
     text-align: center;
     padding-bottom: 20px;
     color: #327aba;
-    font-family: 'Bitter', serif;
+    font-family: 'Alegreya SC', serif;
 }
 
 /*  Navigation  */
 
 .navbar {
     padding: 0 7%;
+    background-color: #fff;
 }
+
 .navbar.navbar-light .nav-link {
     color: #327aba;
     padding: 10px 10px 10px 50px;
@@ -32,52 +38,64 @@ h2 {
     transition: all 0.4s ease;
     text-transform: uppercase;
 }
+
 .navbar.navbar-light .nav-link:hover {
     color: #469ce9;
 }
+
 .navbar.navbar-light .nav-link:focus {
     color: #327aba;
 }
+
 .navbar.navbar-light .navbar-brand {
     color: #327aba;
     font-family: 'Pacifico', cursive;
     font-size: 2em;
     transition: all 0.4s ease;
 }
+
 .navbar.navbar-light .navbar-brand i {
     padding-right: 8px;
     font-size: 1.5em;
 }
-.navbar.navbar-light .navbar-brand:hover{
-   color: #469ce9;
+
+.navbar.navbar-light .navbar-brand:hover {
+    color: #469ce9;
 }
-.navbar .navbar-toggler{
+
+.navbar .navbar-toggler {
     color: #327aba;
     cursor: pointer;
     border: 2px solid #327aba;
     transition: all 0.4s ease;
 }
-.navbar .navbar-toggler:hover{
+
+.navbar .navbar-toggler:hover {
     color: #469ce9;
     border: 2px solid #469ce9;
 }
-.navbar .navbar-toggler:focus{
+
+.navbar .navbar-toggler:focus {
     outline: none;
 }
+
 .navbar .navbar-toggler i {
     font-size: 1.2em;
 }
 
 /*  Scroll  */
+
 .nav-bar-scroll {
     background-color: rgba(70, 156, 233, 0.5);
     transition: 0.4s;
 }
+
 .navbar .navbar-toggler-scroll {
     color: #fff;
     border: 2px solid #fff;
 }
-.navbar.navbar-light .nav-link-scroll, 
+
+.navbar.navbar-light .nav-link-scroll,
 .navbar.navbar-light .navbar-brand-scroll {
     color: #fff;
 }
@@ -92,35 +110,43 @@ h2 {
     margin: 0 10px;
     cursor: pointer;
 }
+
 .carousel-indicators .active {
     transform: scale(1.3);
 }
+
 .slider-container .d-block {
-    height: 90vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
 }
+
 .slider-container .slide1 {
     background-image: url(../img/slider1.jpg);
 }
+
 .slider-container .slide2 {
     background-image: url(../img/slider2.jpg);
 }
+
 .slider-container .slide3 {
     background-image: url(../img/slider3.jpg);
 }
+
 .slider-container .slide4 {
     background-image: url(../img/slider4.jpg);
 }
+
 .slider-container .slider-caption {
-    text-align: left;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Amiri', sans-serif;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
     font-size: 3em;
@@ -129,11 +155,13 @@ h2 {
 /*    Oferta    */
 
 #oferta {
-    background-color: rgba(50, 122, 186, 0.2);
+    background-color: rgba(50, 122, 186, 0.1);
 }
+
 #oferta .col-md-4 {
     padding: 20px;
 }
+
 #oferta i {
     font-size: 4em;
     color: #fff;
@@ -141,10 +169,12 @@ h2 {
     transition: 0.4s;
     cursor: pointer;
 }
+
 #oferta i:hover {
     color: #327aba;
     transform: scale(1.1);
 }
+
 #oferta h4 {
     color: #469ce9;
 }
@@ -158,30 +188,39 @@ h2 {
     height: 70vh;
     transition: 0.4s;
 }
+
 #portfolio .col-my {
     padding: 10px;
 }
+
 #portfolio .mask {
     overflow: hidden;
 }
+
 #portfolio .portfolio-item1 {
     background-image: url(../img/portfolio1.jpg);
 }
+
 #portfolio .portfolio-item2 {
     background-image: url(../img/portfolio2.jpg);
 }
+
 #portfolio .portfolio-item3 {
     background-image: url(../img/portfolio3.jpg);
 }
+
 #portfolio .portfolio-item4 {
     background-image: url(../img/portfolio4.jpg);
 }
+
 #portfolio .portfolio-item5 {
     background-image: url(../img/portfolio5.jpg);
 }
+
 #portfolio .portfolio-item6 {
     background-image: url(../img/portfolio6.jpg);
 }
+
 #portfolio .portfolio-item:hover {
     transform: scale(1.2);
 }
@@ -195,18 +234,26 @@ h2 {
     color: #fff;
     background-attachment: fixed;
 }
+
+#team h2 {
+    color: #fff;
+}
+
 #team .team-description {
     padding-bottom: 40px;
 }
+
 #team .my-team {
     position: relative;
     height: 55vh;
     width: 100%;
-    
+
 }
+
 #team .col-md-4 {
     padding: 8px;
 }
+
 .my-team .team-member {
     height: 100%;
     background-position: center;
@@ -215,15 +262,19 @@ h2 {
     backface-visibility: hidden;
     transition: 0.4s;
 }
-.my-team .team-member1{
+
+.my-team .team-member1 {
     background-image: url(../img/member1.jpg);
 }
-.my-team .team-member2{
+
+.my-team .team-member2 {
     background-image: url(../img/member2.jpg);
 }
-.my-team .team-member3{
+
+.my-team .team-member3 {
     background-image: url(../img/member3.jpg);
 }
+
 .my-team .profile-description {
     position: absolute;
     padding: 10px;
@@ -237,15 +288,18 @@ h2 {
     transition: 0.4s;
     backface-visibility: hidden;
 }
-.my-team .profile-description .description-inner{
+
+.my-team .profile-description .description-inner {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-.my-team:hover .team-member{
+
+.my-team:hover .team-member {
     transform: rotateY(180deg);
-} 
-.my-team:hover .profile-description{
+}
+
+.my-team:hover .profile-description {
     transform: rotateY(0deg);
 }
 
@@ -255,32 +309,53 @@ h2 {
     background-color: #327aba;
     color: #fff;
 }
-#contact h2 {
+
+#contact h2,
+a {
     color: #fff;
 }
+
+#contact a {
+    transition: 0.4s;
+}
+
 #contact i {
     font-size: 2.5em;
     padding: 15px;
     transition: 0.4s;
     cursor: pointer;
 }
-#contact i:hover {
+
+#contact i:hover,
+a:hover {
     color: #469ce9;
+    text-decoration: none;
 }
+
 form {
     padding-top: 70px;
 }
-#contact input, textarea {
+
+#contact input,
+textarea {
     width: 100%;
-    padding: 5px; 
+    padding: 5px;
     margin: 10px 0;
     border-radius: 4px;
     outline: none;
     border: 2px solid #fff;
+    color: #327aba;
 }
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #327aba;
+}
+
 #contact textarea {
-    height: 155px;
+    height: 154px;
 }
+
 .my-button {
     color: #327aba;
     border: 2px solid #fff;
@@ -289,10 +364,11 @@ form {
     transition: 0.4s;
     border-radius: 4px;
     background-color: #fff;
-    font-weight: 700;
     cursor: pointer;
     margin: 20px;
+    font-weight: 700;
 }
+
 .my-button:hover {
     color: #fff;
     border: 2px solid #469ce9;
@@ -306,9 +382,11 @@ footer .copyright p {
     padding: 10px 0;
     margin: 0;
 }
+
 footer .container-footer {
     padding: 20px;
 }
+
 #footer-col i {
     width: 40px;
     height: 40px;
@@ -320,19 +398,22 @@ footer .container-footer {
     transition: 0.4s;
     background-color: #327aba;
 }
+
 #footer-col i:hover {
     color: #469ce9;
 }
+
 footer .policy {
     padding: 10px;
 }
+
 footer .policy a {
     text-decoration: none;
     color: #327aba;
     transition: 0.4s;
     padding: 5px;
 }
+
 footer .policy a:hover {
     color: #469ce9;
 }
-
