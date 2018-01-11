@@ -100,7 +100,6 @@ h2 {
     color: #fff;
 }
 
-
 /*  Slider  */
 
 .carousel-indicators li {
@@ -247,7 +246,6 @@ h2 {
     position: relative;
     height: 55vh;
     width: 100%;
-
 }
 
 #team .col-md-4 {
@@ -260,6 +258,7 @@ h2 {
     background-size: cover;
     z-index: 100;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: 0.4s;
 }
 
