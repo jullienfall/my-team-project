@@ -234,7 +234,6 @@ h2 {
     background-position: center;
     background-size: cover;
     color: #fff;
-    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 }
 
