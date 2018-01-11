@@ -237,7 +237,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 #team h2 {
