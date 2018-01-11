@@ -282,6 +282,7 @@ h2 {
     left: 0;
     bottom: 0;
     text-align: center;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-color: rgba(50, 122, 186, 0.6);
     transition: 0.4s;
