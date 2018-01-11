@@ -116,6 +116,7 @@ h2 {
 
 .slider-container .d-block {
     height: 100vh;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
 }
@@ -185,6 +186,7 @@ h2 {
     background-position: center;
     background-size: cover;
     height: 70vh;
+    min-height: 300px;
     transition: 0.4s;
 }
 
@@ -246,6 +248,7 @@ h2 {
 #team .my-team {
     position: relative;
     height: 55vh;
+    min-height: 300px;
     width: 100%;
 }
 
