@@ -230,14 +230,18 @@ h2 {
 /*   Team   */
 
 #team {
-    -webkit-background-image: url(../img/team.jpg);
     background-image: linear-gradient(to bottom, rgba(50, 122, 186, 0.4), rgba(255, 255, 255, 0.4)), url(../img/team.jpg);
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    /*background-attachment: fixed;*/
+}
+
+@media (min-width: 1200px){
+    #team {
+       background-attachment: fixed; 
+    }
 }
 
 #team h2 {
