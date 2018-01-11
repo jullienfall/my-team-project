@@ -116,7 +116,7 @@ h2 {
 
 .slider-container .d-block {
     height: 100vh;
-    min-height: 300px;
+    min-height: 400px;
     background-position: center;
     background-size: cover;
 }
@@ -187,7 +187,7 @@ h2 {
     background-size: cover;
     height: 70vh;
     min-height: 300px;
-    max-height: 500px;
+    max-height: 450px;
     transition: 0.4s;
 }
 
@@ -224,7 +224,7 @@ h2 {
 }
 
 #portfolio .portfolio-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 /*   Team   */
@@ -249,8 +249,8 @@ h2 {
 #team .my-team {
     position: relative;
     height: 55vh;
-    min-height: 300px;
-    max-height: 500px;
+    min-height: 250px;
+    max-height: 350px;
     width: 100%;
 }
 
