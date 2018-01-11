@@ -257,8 +257,8 @@ h2 {
     background-position: center;
     background-size: cover;
     z-index: 100;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: 0.4s;
 }
 
@@ -285,6 +285,7 @@ h2 {
     transform: rotateY(180deg);
     background-color: rgba(50, 122, 186, 0.6);
     transition: 0.4s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -295,10 +296,12 @@ h2 {
 }
 
 .my-team:hover .team-member {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .my-team:hover .profile-description {
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
